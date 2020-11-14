@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    background-image: url(../img/background4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* compnents */
+.garisVertikal{
+    border-left: 3px solid black;
+    height: 5px;
+    padding-left: 50px;
+}
+/* end of components */
+
+
+/* navbar */
+nav.navbar {
+    background-color: #ffffff;
+}
+nav.navbar > div.container {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav.navbar .title {
+    display: flex;
+}
+nav.navbar .logo {
+    width: 50px;
+    height: 30px;
+    margin-right: 15px;
+}
+nav.navbar .navigation a {
+    margin-right: 50px;
+    color: black;
+}
+nav.navbar .navigation a:hover {
+    color:brown;
+}
+/* end of navbar */
+
+
+.judul{
+    padding: 250px 0 200px 10%;
+    font-size: 24px;
+    font-weight: 600;
+    position: fixed;
+}
+.sejajar{
+    display: flex;
+}
+.posisi{
+    margin-top: 40px;
+    width: 50%;
+    margin-left: 33%;
+}
+.sejajar1{
+    display: flex;
+}
+#donlod{
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-bottom: 5px;
+}
+.sejajar2{
+    display: flex;
+    margin-bottom: 70px;
+}
+.number{
+    background-color: #F6D58A;
+    padding: 10px;
+    border-radius: 25%;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+.isi{
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: black;
+}
+.lingkaran{
+    position: fixed;
+    margin: 100px 0 0px 125px;
+    width: 50px;
+    height: 50px;
+    background-color: #80BEF5;
+    border-radius: 100%;
+}
+.lingkaran1{
+    position: fixed;
+    margin: 180px 0 0px 125px;
+    width: 50px;
+    height: 50px;
+    background-color: #F6D58A;
+    border-radius: 100%;
+}
+.lingkaran2{
+    position: fixed;
+    margin: 260px 0 0px 125px;
+    width: 50px;
+    height: 50px;
+    background-color: #F79F77;
+    border-radius: 100%;
+}
+.lingkaran3{
+    position: fixed;
+    margin: 340px 0 0px 125px;
+    width: 50px;
+    height: 50px;
+    background-color: #7DBFA1;
+    border-radius: 100%;
+}
+#contener{
+    min-height: 50%;
+    position: relative;
+}
+
+.footer{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0px;
+    font-weight: 600;
+}

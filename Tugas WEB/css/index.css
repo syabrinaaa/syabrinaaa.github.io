@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    background-image: url('../img/bb.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* compnents */
+.garisVertikal{
+    border-left: 3px solid black;
+    height: 5px;
+    padding-left: 50px;
+}
+/* end of components */
+
+
+/* navbar */
+nav.navbar {
+    background-color: #ffffff;
+}
+nav.navbar > div.container {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav.navbar .title {
+    display: flex;
+}
+nav.navbar .logo {
+    width: 50px;
+    height: 30px;
+    margin-right: 15px;
+}
+nav.navbar .navigation a {
+    margin-right: 50px;
+    color: black;
+}
+nav.navbar .navigation a:hover {
+    color:brown;
+}
+#body{
+    background-color: #f5f5f5;
+}
+
+.paragraf{
+    width: 50%;
+    position: relative;
+    top: 120px;
+    left: 70px;
+    font-size: 36px;
+}
+#gambar {
+    float: right;
+    height: 490px;
+    position: relative;
+    top: -90px;
+}
+.bintang{
+    height: 50px;
+    position: relative;
+    left: 70px;
+}
+.paragraf1{
+    width: 50%;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 70px;
+}
+.button {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+}
+
+.button-white {
+    color: white;
+    background-color: black;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.329);
+}
+
+.paragraf2{
+    width: 100%;
+    padding: 40px 0 15px 0;
+    display: flex ;
+    justify-content: space-around;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.paragraf3{
+    text-align: center;
+    margin-top: 50px;
+}
+#segitiga{
+    border-top: 360px solid #F79F77; 
+    border-left: 260px solid transparent;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+.segitiga1{
+    border-bottom: 360px solid #F79F77; 
+    border-right: 260px solid transparent;
+    float: right;
+    position: absolute;
+    left: 0;
+}
+#gambar1{
+    margin:5% 0 0 20%;
+    display: flex;
+    justify-content: space-around;
+
+}
+#gambar2{
+    height: 300px;
+    border-radius: 25px;
+    /* z-index: 1; */
+}
+.seklebat{
+    color: #F79F77;
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+}
+.gambar5{
+    height: 70px;
+    display: grid;
+    margin-left: 18px;
+    color: #F79F77;
+}
+.gambar3{
+    display: grid;
+    height: 20px;
+}
+.tulisan{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+#m{
+    margin: 5% 9% 0 0;
+}
+.paragraf4{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#par{
+    display: flex;
+    margin: 4% 0 0 0 ;
+}
+#par1{
+    font-family: 'Carter One', cursive;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow:1px 2px 8px rgba(56, 56, 56, 0.65);
+}
+#par2{
+    font-family: 'Carter One', cursive;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 70px 0 0 50px;
+    text-shadow:1px 2px 8px rgba(56, 56, 56, 0.65);
+}
+.gambar4{
+    height: 50px;
+    float: left;
+    padding: 35px 30px 0 20%;
+    margin-top: -60px;
+}
+.space{
+    width: 200%;
+    text-align: left;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #80BEF5;
+    margin-top: -60px;
+}
+.color{
+
+    color: black;
+    padding: 0px 0px 0 20px;
+}
+.color1{
+    color: black;
+}
+#contener{
+    min-height: 50%;
+    position: relative;
+}
+
+.footer{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0px;
+    font-weight: 600;
+}
