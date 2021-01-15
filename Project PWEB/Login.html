@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainz Indonesia</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="title">
+            <div ><img class="logo" src="img/LOGO.png" alt=""></div>
+            <h1 style="font-weight: 400;"><strong>SAINZ</strong></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html">Tentang Kami</a></li>
+            <li><a href="index.html">Pelajaran</a></li>
+            <li><a href="Daftar.html">Daftar</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <div class="kotak">
+        <div class="container">
+            <div id="tekslog"><strong>Masuk ke Sainz</strong></div>
+            <a onclick="getInfo()" class="kotak2 warnawin1" style="margin-top:70px;" href="#"><img class="img" src="../Tugas WEB/img/facebook.png" alt=""> Masuk dengan Facebook</a>       
+            <a onclick="getInfo1()" class="kotak2 warnawin2" href="#"><img class="img1" src="../Tugas WEB/img/twitter.png" alt="">Masuk dengan Twitter</a>       
+            <a onclick="getInfo2()" class="kotak2 warnawin3" href="#"><img class="img2" src="../Tugas WEB/img/google.png" alt="">Masuk dengan Google</a>
+
+            <div class="login">
+                <div id="or">atau</div>
+                <table>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input class="kotakmasuk" id="email" type="text"  placeholder="Masukkan Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input class="kotakmasuk" id="password" type="password" placeholder="Kata Sandi"></td>
+                        <td><div class="checkbox">
+                            <input  type="checkbox" onclick="showPass()">Show Password</td>
+                    </tr>
+                    <tr>
+                        <td><div class="merah">Invalid Username or Password.</div></td>
+                        <td><button class="button" onclick="getLogin()" id="masuk" type="submit">Masuk</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>          
+    </div>
+
+     <!-- Masuk Facebook -->
+     <div id="bg_gelap" class="kotak3">
+        <div class="window warnawin1">
+            <div class="container">
+                <br>
+                <div class="judul"><img class="gambar" src="../Tugas WEB/img/facebook.png" alt="">Masuk Facebook</div>
+                <table class="masfb">
+                    <tr>
+                        <td><input class="kotakmasuk1" type="text" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="kotakmasuk1" type="password" placeholder="Kata Sandi"></td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td><a href="Beranda(1).html"><input class="masuk1" type="submit" name="Masuk" value="Masuk"></a></td>
+                    </tr>
+                    <tr>
+                        <td><button class="masuk2 buttonn" type="batal">Batal</button</td>
+                    </tr>
+                </table>
+            </div>           
+        </div>
+    </div>
+
+    <!-- Masuk Twitter -->
+    <div id="bg_gelap1" class="kotak3">
+        <div class="window warnawin2">
+            <div class="container">
+                <br>
+                <div class="judul"><img class="gambar1" src="../Tugas WEB/img/twitter.png" alt="">Masuk Twitter</div>
+                <table class="masfb">
+                    <tr>
+                        <td><input class="kotakmasuk1" type="text" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="kotakmasuk1" type="password" placeholder="Kata Sandi"></td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td><a href="Beranda(1).html"><input class="masuk1" type="submit" name="Masuk" value="Masuk"></a></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="batal()" class="masuk2 buttonn" type="batal">Batal</button</td>
+                    </tr>
+                </table>
+            </div>           
+        </div>
+    </div>
+
+    <!-- Masuk Google -->
+    <div id="bg_gelap2" class="kotak3">
+        <div id="popup2" class="window warnawin3">
+            <div class="container">
+                <br>
+                <div class="judul"><img class="gambar1" src="../Tugas WEB/img/google.png" alt="">Masuk Google</div>
+                <table class="masfb">
+                    <tr>
+                        <td><input class="kotakmasuk1" type="text" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="kotakmasuk1" type="password" placeholder="Kata Sandi"></td>
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr>
+                        <td><a href="Beranda(1).html"><input class="masuk1" type="submit" name="Masuk" value="Masuk"></a></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="batal()" class="masuk2 buttonn" type="batal">Batal</button</td>
+                    </tr>
+                </table>
+            </div>           
+        </div>
+    </div>
+
+    <div id="contener">
+        <div class="footer">SAINZ INDONESIA</div>
+    </div>
+    <script src="script/daftar.js"></script>
+    <script src="script/script.js"></script>
+</body>
+</html>

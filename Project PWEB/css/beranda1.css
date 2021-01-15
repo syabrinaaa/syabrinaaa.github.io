@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    background-color: #ffffff;
+    justify-content: space-around;
+    color: #000000;
+    height: 75px;
+    align-items: center
+}
+
+nav .logo {
+    width: 50px;
+    height: 30px;
+    margin-right: 15px;
+}
+nav ul li a:hover {
+    color:brown;
+    opacity: 1;
+    bottom: 13px;
+}
+nav ul li a {
+    color:rgba(0, 0, 0, 0.801);
+    text-decoration: none;
+}
+nav .title {
+    display: flex;
+    /* margin-left: -100px; */
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+/* end of navbar */
+
+/*menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position : relative;
+    z-index: 2;
+}
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -5px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+/*animation */
+.menu-toggle span:nth-child(2)  {
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4)  {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2)  {
+    background-color: black;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4)  {
+    background-color: black;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3)  {
+    opacity: 0;
+    transform: scale(0);
+}
+
+
+.paragraf{
+    width: 50%;
+    position: relative;
+    top: 120px;
+    left: 70px;
+    font-size: 36px;
+}
+#gambar {
+    float: right;
+    height: 490px;
+    position: relative;
+    top: -90px;
+}
+.bintang{
+    height: 50px;
+    position: relative;
+    left: 70px;
+}
+.paragraf1{
+    width: 30%;
+    height: 50px;
+    position: relative;
+    top: 10px;
+    left: 70px;
+}
+.paragraf2{
+    width: 100%;
+    padding: 40px 0 15px 0;
+    display: flex ;
+    justify-content: space-around;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.paragraf3{
+    margin-top: 50px;
+    text-align: center;
+    nav-index: 99;
+}
+#segitiga{
+    border-top: 360px solid #F79F77; 
+    border-left: 260px solid transparent;
+    float: right;
+    position: absolute;
+    right: 0;
+}
+#segitiga1{
+    border-bottom: 360px solid #F79F77; 
+    border-right: 260px solid transparent;
+    float: right;
+    position: absolute;
+    left: 0;
+}
+#gambar1{
+    margin:5% 0 0 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.paragraf3 strong {
+    font-size: 32px;
+}
+#gambar2{
+    height: 300px;
+    border-radius: 25px;
+    /* z-index: 1; */
+}
+.seklebat{
+    color: #F79F77;
+    font-size: 28px;
+    font-weight: 1000;
+    text-align: center;
+}
+.gambar5{
+    height: 70px;
+    display: grid;
+    margin-left: 18px;
+    color: #F79F77;
+}
+.gambar3{
+    display: grid;
+    height: 20px;
+}
+.tulisan{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+#m{
+    margin: 5% 9% 0 0;
+}
+.paragraf4{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#par{
+    display: flex;
+    margin: 4% 0 0 0 ;
+}
+#par1{
+    font-family: 'Carter One', cursive;
+    font-size: 32px;
+    font-weight: 600;
+    text-shadow:1px 2px 8px rgba(56, 56, 56, 0.65);
+}
+#par2{
+    font-family: 'Carter One', cursive;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 70px 0 0 50px;
+    text-shadow:1px 2px 8px rgba(56, 56, 56, 0.65);
+}
+.gambar4{
+    height: 50px;
+    float: left;
+    padding: 35px 30px 0 20%;
+    margin-top: -60px;
+}
+.space{
+    width: 200%;
+    text-align: left;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #80BEF5;
+    margin-top: -60px;
+}
+.color{
+
+    color: black;
+    padding: 0px 0px 0 20px;
+}
+.color1{
+    color: black;
+}
+#contener{
+    min-height: 50%;
+    position: relative;
+}
+
+.footer{
+    text-align: center;
+    font-size: 24px;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0px;
+    font-weight: 600;
+}
+
+/*responsive breakpoint*/
+/* tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        top: 0;
+        width: 40%;
+        height: 100vh;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color:rgba(255, 255, 255, 0.911);
+        z-index: 1;
+        transition: all 1s;
+        opacity: 0;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    nav ul.slide {
+        opacity: 1;
+    }
+    .body {
+        margin: ;
+    }
+    .paragraf p {
+        width: 50%;
+        position: relative;
+        top: -50px;
+        left: 40px;
+        font-size: 20px;
+    }
+    .pict #gambar {
+        float: right;
+        height: 300px;
+        /* position: relative; */
+        top: -90px;
+    }
+    .star .bintang {
+        height: 30px;
+        /* position: relative; */
+        left: 110px;
+        top: -50px;
+    }
+    .paragraf1 p {
+        width: 90%;
+        height: 50px;
+        position: relative;
+        top: -50px;
+        left: 40px;
+    }
+    .paragraf2 {
+        width: 90%;
+        padding: 40px 0 15px 0;
+        display: flex ;
+        justify-content: space-around;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+    }
+    .paragraf2 .gambar5 {
+        height: 50px;
+        display: grid;
+        margin-left: 40px;
+        color: #F79F77;
+        padding-top: 15px;
+    }
+    
+    .seklebat {
+        color: #F79F77;
+        font-weight: 1000;
+        text-align: center;
+    }
+    #segitiga{
+        border-top: 200px solid #F79F77; 
+        border-left: 150px solid transparent;
+    }
+    .paragraf2 p {
+        font-size: 17px;
+    }
+    .isi #gambar2 {
+        height: 150px;
+        border-radius: 25px; 
+    }
+    .paragraf3 p strong {
+        font-size: 18px;
+        z-index: 2;
+    }
+    .paragraf3{
+        margin-top: 50px;
+        text-align: center;
+        nav-index: 99;
+    }
+    #segitiga1 {
+        border-bottom: 200px solid #F79F77; 
+        border-right: 150px solid transparent;
+        float: right;
+        position: absolute;
+        left: 0;
+    }
+    .tulisan{
+        margin-left: 50px;
+        margin-top: -30px;
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+        font-size: 0.9em;
+    }
+    #m{
+        margin: 5% 9% 0 0;
+    }
+    .paragraf3 p {
+        font-size: 0.9em;
+    }
+
+    
+}
