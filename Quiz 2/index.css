@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    margin-top: 200px;
+}
+.form {
+    width: 300px;
+    height: 280px;
+    margin: 30 auto;
+    background: yellow;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form h2 {
+    text-align: center;
+    margin-top: 30px;
+}
+#box-1 {
+    height: 25px;
+    align-items: center;
+    width: 275px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.form .box-1 input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
